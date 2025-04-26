@@ -1,6 +1,50 @@
+body {
+  background-color: #acdcee;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+}
 h1 {
   text-align: center;
+  font-size: 36px;
 }
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}
+h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.city:last-child {
+  border: none;
+}
+.time {
+  font-size: 48px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.date {
+  opacity: 0.7;
+}
+
 footer {
   text-align: center;
+  opacity: 0.6;
 }

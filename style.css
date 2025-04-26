@@ -1,6 +1,14 @@
 body {
   background-color: #acdcee;
 }
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 .container {
   max-width: 600px;
   margin: 60px auto;
@@ -14,12 +22,6 @@ h1 {
   font-size: 36px;
 }
 
-select {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-}
 h2 {
   margin: 0 0 10px;
   font-size: 24px;
@@ -27,8 +29,8 @@ h2 {
 
 .city {
   display: flex;
-  justify-content: space-between;
   margin: 10px 0;
+  justify-content: space-between;
   padding: 30px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }

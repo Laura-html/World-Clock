@@ -1,3 +1,7 @@
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+}
 function updateTime() {
   let londonElement = document.querySelector("#london");
   let londonDateElement = londonElement.querySelector(".date");
@@ -13,6 +17,9 @@ function updateTime() {
   marylandDateElement.innerHTML = marylandTime.format("MMMM Do YYYY");
   marylandTimeElement.innerHTML = marylandTime.format("H:mm:ss");
 }
+
+let citiesSelectElement = document.querySelector("city");
+citiesSelectElement.addEventListener("change", updateCity);
 
 updateTime();
 setInterval(updateTime, 1000);
